@@ -1,5 +1,5 @@
-require "colorname/version"
+require 'colorname/version'
 
+# Colorname Module
 module Colorname
-  # Your code goes here...
 end
