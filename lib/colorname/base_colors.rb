@@ -1,3 +1,4 @@
+# Define the base colors
 class BaseColor
   attr_reader :name, :range
   def known(rgb, name)
