@@ -1,5 +1,3 @@
 module Colorname
-  def find(color_code)
-
-  end
+  def find(color_code); end
 end
