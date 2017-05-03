@@ -6,11 +6,11 @@ module Colorname
       if (cc.red == cc.green) && (cc.green == cc.blue)
         # XXX Should add grey?
         cc.red < 127 ? [:Black] : [:White]
-      else if cc.red == cc.green
+      elsif cc.red == cc.green
         [:Red, :Green]
-      else if cc.red == cc.blue
+      elsif cc.red == cc.blue
         [:Red, :Blue]
-      else if cc.green == cc.blue
+      elsif cc.green == cc.blue
         [:Green, :Blue]
       else
         case [cc.red, cc.green, cc.blue].each_with_index.max[1]
