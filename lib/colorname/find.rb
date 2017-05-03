@@ -3,17 +3,23 @@ module Colorname
   module Find
     # Dominant base color finder
     def self.Dominant(cc)
-      if cc.red == cc.green && cc.green == cc.blue
-        cc.red < 127 ? :Black : :White
-      # BUGFIX: If only two base color has the same value?
+      if (cc.red == cc.green) && (cc.green == cc.blue)
+        # XXX Should add grey?
+        cc.red < 127 ? [:Black] : [:White]
+      else if cc.red == cc.green
+        [:Red, :Green]
+      else if cc.red == cc.blue
+        [:Red, :Blue]
+      else if cc.green == cc.blue
+        [:Green, :Blue]
       else
         case [cc.red, cc.green, cc.blue].each_with_index.max[1]
         when 0
-          :Red
+          [:Red]
         when 1
-          :Green
+          [:Green]
         when 2
-          :Blue
+          [:Blue]
         end
       end
     end
