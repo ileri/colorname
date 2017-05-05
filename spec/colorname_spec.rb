@@ -5,9 +5,9 @@ RSpec.describe Colorname do
     expect(Colorname::VERSION).not_to be nil
   end
 
-  it 'can find Dominant color' do
+  it 'find base color name' do
     this_color = Color::RGB.new(30, 140, 30)
-    expect(puts(Colorname::Dominant.find(this_color)))
+    expect(puts(Colorname::Base.find(this_color)))
   end
 
   it 'does something useful' do
