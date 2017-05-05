@@ -6,8 +6,8 @@ RSpec.describe Colorname do
   end
 
   it 'can find Dominant color' do
-    white = Color::RGB.new(255,255,255)
-    expect(Colorname::Find.Dominant(white))
+    this_color = Color::RGB.new(30, 140, 30)
+    expect(puts(Colorname::Dominant.find(this_color)))
   end
 
   it 'does something useful' do
