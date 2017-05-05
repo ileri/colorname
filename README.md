@@ -13,19 +13,19 @@ gem 'colorname'
 ```
 
 And then execute:
-
-    $ bundle
-
+```
+$ bundle
+```
 Or install it yourself as:
-
-    $ gem install colorname
-
+```
+$ gem install colorname
+```
 ## Usage
 
 ```ruby
-color_code = Color::RGB.new(30, 140, 30)
-color_name = Colorname::Dominant.find(color_code))
-puts color_name # Green
+color_code = Color::RGB.new(0,0,0)
+color_name = Colorname.find(color_code))
+puts color_name # black
 ```
 
 ## Contributing
