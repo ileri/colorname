@@ -1,6 +1,6 @@
 require 'color'
 require 'colorname/version'
-require 'colorname/find'
+require 'colorname/base'
 
 # Colorname Module
 module Colorname
