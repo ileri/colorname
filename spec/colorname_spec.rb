@@ -7,7 +7,12 @@ RSpec.describe Colorname do
 
   it 'find base color name' do
     this_color = Color::RGB.new(30, 140, 30)
-    expect(puts(Colorname::Base.find(this_color)))
+    expect(Colorname.base(this_color))
+  end
+
+  it 'find color name' do
+    this_color = Color::RGB.new(0,0,0)
+    expect(Colorname.find(this_color))
   end
 
   it 'does something useful' do
