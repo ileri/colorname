@@ -6,10 +6,10 @@ require 'colorname/version'
 Gem::Specification.new do |spec|
   spec.name          = 'colorname'
   spec.version       = Colorname::VERSION
-  spec.authors       = ['celilileri']
+  spec.authors       = ['celilileri','ozeno']
   spec.email         = ['celil.ileri@bil.omu.edu.tr']
 
-  spec.summary       = ' A Color Categorizator and Namer Ruby Gem Project '
+  spec.summary       = 'A Color Categorizator and Namer Ruby Gem'
   spec.homepage      = 'https://github.com/celilileri/colorname'
   spec.license       = 'MIT'
 
@@ -21,8 +21,9 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
+  spec.add_dependency 'color', '~> 1.8'
+  
   spec.add_development_dependency 'bundler', '~> 1.14'
   spec.add_development_dependency 'rake', '~> 10.0'
   spec.add_development_dependency 'rspec', '~> 3.0'
-  spec.add_development_dependency 'color', '~> 1.8'
 end
