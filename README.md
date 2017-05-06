@@ -24,7 +24,7 @@ $ gem install colorname
 
 ```ruby
 color_code = Color::RGB.new(0,0,0)
-color_name = Colorname.find(color_code))
+color_name = Colorname.find(color_code)
 puts color_name # black
 ```
 
