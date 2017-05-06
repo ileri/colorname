@@ -8,7 +8,7 @@ Ruby Gem for decide name of a given color.
 
 ### Easy Gem Installation
 
-```
+```shell
 $ gem install colorname
 ```
 ### Gemfile  Integration
