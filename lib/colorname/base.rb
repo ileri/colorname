@@ -1,6 +1,12 @@
 # Color Name Finder method
 module Colorname
-  class << self
+  class << self 
+    def base(*cc)
+      base = base_color make_color *cc
+      base.is_a?(Array) ? base.join(' ') : base
+    end
+  
+    private
     def base_color(cc)
       if cc.red == cc.green && cc.green == cc.blue
         # XXX Should add grey?
@@ -21,11 +27,6 @@ module Colorname
           :Blue
         end
       end
-    end
-
-    def base(cc, sign = ', ')
-      base = base_color(cc)
-      base.is_a?(Array) ? base.join(sign) : base
     end
   end
 end
