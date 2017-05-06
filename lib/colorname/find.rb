@@ -12,7 +12,6 @@ module Colorname
     end
 
     def closest(cc)
-      puts "En yakın bulunuyor..."
       diff = 100
       similar = :undefined
       VALUES.each do |key, val|
