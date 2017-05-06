@@ -6,6 +6,13 @@ Ruby Gem for decide name of a given color.
 
 ## Installation
 
+### Easy Gem Installation
+
+```
+$ gem install colorname
+```
+### Gemfile  Integration
+
 Add this line to your application's Gemfile:
 
 ```ruby
@@ -16,16 +23,16 @@ And then execute:
 ```
 $ bundle
 ```
-Or install it yourself as:
-```
-$ gem install colorname
-```
 ## Usage
 
 ```ruby
-color_code = Color::RGB.new(0,0,0)
-color_name = Colorname.find(color_code)
-puts color_name # black
+Colorname.find 'f0f8ff'                    # [:aliceblue]
+
+Colorname.find '#00ffff'                   # [:aqua, :cyan]
+
+Colorname.find 143, 188, 143               # [:darkseagreen]
+
+Colorname.find Color::RGB.new(255, 0, 255) # [:fuchsia, :magenta]
 ```
 
 ## Contributing
