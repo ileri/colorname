@@ -35,6 +35,19 @@ Colorname.find 143, 188, 143               # [:darkseagreen]
 Colorname.find Color::RGB.new(255, 0, 255) # [:fuchsia, :magenta]
 ```
 
+To find dominant base color name
+
+```ruby
+Colorname.base '32cd32'                    # :Green
+
+Colorname.base '#FF00CC'                   # :Red
+
+Colorname.base 25, 150, 255                # :Blue
+
+Colorname.base Color::RGB.new(255, 0, 255) # "Red Blue"
+
+```
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/celilileri/colorname. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
