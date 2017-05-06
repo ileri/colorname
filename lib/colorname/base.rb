@@ -19,11 +19,11 @@ module Colorname
       else
         case [cc.red, cc.green, cc.blue].each_with_index.max[1]
         when 0
-          :red
+          [:red]
         when 1
-          :green
+          [:green]
         when 2
-          :blue
+          [:blue]
         end
       end
     end

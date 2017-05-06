@@ -38,13 +38,13 @@ Colorname.find Color::RGB.new(255, 0, 255) # [:fuchsia, :magenta]
 To find dominant base color name
 
 ```ruby
-Colorname.base '32cd32'                    # :Green
+Colorname.base '32cd32'                    # [:green]
 
-Colorname.base '#FF00CC'                   # :Red
+Colorname.base '#FF00CC'                   # [:red]
 
-Colorname.base 25, 150, 255                # :Blue
+Colorname.base 25, 150, 255                # [:blue]
 
-Colorname.base Color::RGB.new(255, 0, 255) # "Red Blue"
+Colorname.base Color::RGB.new(255, 0, 255) # [:red, :blue]
 
 ```
 
