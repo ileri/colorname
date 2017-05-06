@@ -1,5 +1,6 @@
 require 'color'
 require 'colorname/version'
+require 'colorname/pre'
 require 'colorname/base'
 require 'colorname/find'
 require 'colorname/list'
