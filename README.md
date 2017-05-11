@@ -33,6 +33,8 @@ Colorname.find '#00ffff'                   # [:aqua, :cyan]
 Colorname.find 143, 188, 143               # [:darkseagreen]
 
 Colorname.find Color::RGB.new(255, 0, 255) # [:fuchsia, :magenta]
+
+Colorname.find_by_image (url | path)       # [:names_of_most_dominant_colors]
 ```
 
 To find dominant base color name
