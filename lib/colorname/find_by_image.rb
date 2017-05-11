@@ -6,7 +6,7 @@ module Colorname
       color_names = []
 
       colors.to_rgb.each do |color|
-        color_names << Colorname.find(*color)
+        color_names << find(*color)
       end
 
       color_names
