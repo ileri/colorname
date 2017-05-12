@@ -15,7 +15,7 @@ RSpec.describe Colorname do
     expect(Colorname.find(this_color))
   end
 
-  it 'finds color name' do
+  it 'finds color name by image' do
     expect(Colorname.find_by_image('http://www.petmd.com/sites/default/files/scared-kitten-shutterstock_191443322.jpg'))
   end
 
