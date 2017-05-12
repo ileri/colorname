@@ -1,3 +1,3 @@
 module Colorname
-  VERSION = '0.1.2.5'.freeze
+  VERSION = '0.1.3'.freeze
 end
