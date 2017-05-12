@@ -2,6 +2,12 @@
 module Colorname
   class << self
     def find_by_image(image)
+      # find_by_image ( image path or url )
+      #
+      # This function help you to find the most dominant colors' names in
+      # given image.
+      #
+      # You can give a path or url as arguement.
       colors = Miro::DominantColors.new(image)
       color_names = []
 
@@ -11,5 +17,6 @@ module Colorname
 
       color_names
     end
+  alias findbyimage find_by_image
   end
 end
