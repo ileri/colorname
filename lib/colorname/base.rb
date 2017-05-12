@@ -2,6 +2,10 @@
 module Colorname
   class << self 
     def base(*cc)
+      # Base Color Finder
+      #
+      # This function helps you to find the most dominant base color name
+      # of the given color.
       base_color make_color *cc
     end
   
