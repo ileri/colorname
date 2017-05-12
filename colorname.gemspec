@@ -6,10 +6,10 @@ require 'colorname/version'
 Gem::Specification.new do |spec|
   spec.name          = 'colorname'
   spec.version       = Colorname::VERSION
-  spec.authors       = ['celilileri','ozeno']
+  spec.authors       = ['Serhat Celil İLERİ', 'Ömer ÖZEN']
   spec.email         = ['celil.ileri@bil.omu.edu.tr']
 
-  spec.summary       = 'A Color Categorizator and Namer Ruby Gem'
+  spec.summary       = 'Find color name and categorize easily by a Ruby Gem!'
   spec.homepage      = 'https://github.com/celilileri/colorname'
   spec.license       = 'MIT'
 
