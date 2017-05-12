@@ -39,6 +39,7 @@ To find names of most dominant colors of and image
 
 ```ruby
 Colorname.find_by_image (url_or_path)       # [:names_of_most_dominant_colors]
+
 Colorname.findbyimage (url_or_path)         # [:names_of_most_dominant_colors]
 
 ```
