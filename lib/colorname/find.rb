@@ -2,6 +2,10 @@
 module Colorname
   class << self  
     def find(*cc)
+      # find (color_code or Color instance)
+      #
+      # This function helps you to find the name of the closest color's name
+      # to given color or color code.
       decide make_color *cc
     end
 
