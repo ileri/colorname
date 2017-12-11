@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.com/celilileri/colorname.svg?token=qSHr3MpL5P1vaDoy2yPE&branch=master)](https://travis-ci.com/celilileri/colorname)
 
-Ruby Gem for decide name of a given color.
+Ruby Gem for find name of a given color.
 
 ## Installation
 
@@ -35,7 +35,7 @@ Colorname.find 143, 188, 143               # [:darkseagreen]
 Colorname.find Color::RGB.new(255, 0, 255) # [:fuchsia, :magenta]
 ```
 
-To find names of most dominant colors of and image
+To find names of most dominant colors of an image
 
 ```ruby
 Colorname.find_by_image (url_or_path)       # [:names_of_most_dominant_colors]
